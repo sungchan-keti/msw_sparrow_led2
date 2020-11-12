@@ -204,7 +204,6 @@ function msw_mqtt_connect(broker_ip, port) {
 }
 
 function on_receive_from_muv(topic, str_message) {
-    console.log('test test');
     console.log('[' + topic + '] ' + str_message);
 
     parseControlMission(topic, str_message);
@@ -256,6 +255,7 @@ function parseControlMission(topic, str_message) {
         console.log('recevied data is ' + str_message);
         var topic_arr = topic.split('/');
         var _topic = '/MUV/control/' + config.lib[0].name + '/' + topic_arr[topic_arr.length - 1];
+        console.log(_topic);
         msw_mqtt_client.publish(_topic, str_message);
     }
     catch (e) {
