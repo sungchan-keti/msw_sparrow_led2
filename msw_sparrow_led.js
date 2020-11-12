@@ -53,7 +53,7 @@ catch (e) {
         target: 'armv6',
         description: "[name] [portnum] [baudrate]",
         scripts: './lib_sparrow_led 1 115200',	
-        data: ['DISTANCE']
+        control: ['DISTANCE']
     };
     config.lib.push(add_lib);
 }
