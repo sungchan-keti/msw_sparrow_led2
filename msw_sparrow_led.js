@@ -18,7 +18,7 @@ var mqtt = require('mqtt');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
 
-var my_msw_name = 'msw_sparrow_lidar'				// 'msw_sparrow_air';
+var my_msw_name = 'msw_sparrow_led'				// 'msw_sparrow_air';
 
 var fc = {};
 var config = {};
