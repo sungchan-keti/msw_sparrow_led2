@@ -54,7 +54,7 @@ catch (e) {
         description: "[name] [portnum] [baudrate]",
         scripts: './lib_sparrow_led 1 115200',	
         data: ['BLUZEN'],
-        control: ['DISTANCE']
+        control: ['CONTROL_ONOFF']
     };
     config.lib.push(add_lib);
 }
