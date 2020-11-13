@@ -18,7 +18,7 @@ var mqtt = require('mqtt');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
 
-var my_msw_name = 'msw_sparrow_lidar'				// 'msw_sparrow_air';
+var my_msw_name = 'msw_sparrow_led'				// 'msw_sparrow_air';
 
 var fc = {};
 var config = {};
@@ -49,12 +49,12 @@ try {
 }
 catch (e) {
     add_lib = {
-        name: 'msw_sparrow_led'				// 'lib_sparrow_air',
+        name: 'msw_sparrow_led'					// 'lib_sparrow_air',
         target: 'armv6',
-        description: "[name] [portnum] [baudrate]",
-        scripts: './lib_sparrow_led 1 115200'			// './lib_sparrow_air /dev/ttyUSB4 115200',
-        data: ['DISTANCE'],
-        							// control: ['Control_AIR']
+        description: "[name] [gpio_id]",
+        scripts: './lib_sparrow_led 1'				// './lib_sparrow_air /dev/ttyUSB4 115200',
+        							//data: ['DISTANCE'],
+        control: ['Control_ONOFF']
     };
     config.lib.push(add_lib);
 }
