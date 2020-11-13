@@ -53,7 +53,7 @@ catch (e) {
         target: 'armv6',
         description: "[name] [gpio_id] [NULL]",
         scripts: './lib_sparrow_led 1, 57600',			// './lib_sparrow_air /dev/ttyUSB4 115200',
-        							//data: ['DISTANCE'],
+	data: ['LED'],
         control: ['Control_ONOFF']
     };
     config.lib.push(add_lib);
