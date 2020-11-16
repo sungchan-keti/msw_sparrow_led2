@@ -51,9 +51,9 @@ catch (e) {
     add_lib = {
         name: 'msw_sparrow_led',				// 'lib_sparrow_air',
         target: 'armv6',
-        description: "[name] [gpio_id] [NULL]",
-        scripts: './lib_sparrow_led 1, 57600',			// './lib_sparrow_air /dev/ttyUSB4 115200',
-	data: ['LED'],
+        description: "[name] [gpio_id]",
+        scripts: './lib_sparrow_led 1',			// './lib_sparrow_air /dev/ttyUSB4 115200',
+		data: ['LED'],
         control: ['Control_ONOFF']
     };
     config.lib.push(add_lib);
