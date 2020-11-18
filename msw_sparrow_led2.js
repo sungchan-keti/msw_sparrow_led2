@@ -52,7 +52,7 @@ catch (e) {
         name: 'msw_sparrow_led2',				// 'lib_sparrow_air',
         target: 'armv6',
         description: "[name] [gpio_id]",
-        scripts: './lib_sparrow_led 2',			// './lib_sparrow_air /dev/ttyUSB4 115200',
+        scripts: './lib_sparrow_led2 2',			// './lib_sparrow_air /dev/ttyUSB4 115200',
 	data: ['LED'],
         control: ['Control_ONOFF']
     };
